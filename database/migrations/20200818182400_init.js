@@ -67,9 +67,6 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
   return knex.schema
-    .dropTableIfExists("vote_cast")
-    .dropTableIfExists("player_id")
-    .dropTableIfExists("round_id")
     .dropTableIfExists("votes")
     .dropTableIfExists("rounds")
     .dropTableIfExists("players_games")
